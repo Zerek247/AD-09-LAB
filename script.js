@@ -1,4 +1,4 @@
-console.log("🚀 Bootstrap Demo listo!");
+console.log("Bootstrap Demo");
 document.querySelectorAll(".btn-primary").forEach((btn) => {
   btn.addEventListener("click", () => {
     alert(`Hiciste clic en: ${btn.innerText}`);
