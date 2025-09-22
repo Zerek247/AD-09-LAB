@@ -1,0 +1,46 @@
+.page {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+h1 {
+  letter-spacing: .2px;
+  font-weight: 700;
+}
+
+.toolbar {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.deck {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+
+@media (min-width: 992px) {
+  .deck {
+    grid-template-columns: 360px 1fr;
+  }
+}
+
+.card {
+  max-width: 360px;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.08);
+  transition: transform .15s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+}
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
